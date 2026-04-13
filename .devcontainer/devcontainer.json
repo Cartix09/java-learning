@@ -1,0 +1,5 @@
+{
+  "name": "java-learning",
+  "image": "mcr.microsoft.com/devcontainers/java:1-17-bullseye",
+  "postCreateCommand": "mvn -version"
+}
