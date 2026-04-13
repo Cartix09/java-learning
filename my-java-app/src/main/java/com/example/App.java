@@ -1,9 +1,16 @@
 package com.example;
 
 public class App {
-    public static void main(String[] args) {
+
+    private Printer printer;
+
+    public App(Printer printer) {
+        this.printer = printer;
+    }
+
+    public void run(String[] args) {
         if (args.length == 0) {
-            System.out.println("Usage: java com.example.App <number1> <number2> ...");
+            printer.print("Usage: provide numbers");
             return;
         }
 
@@ -14,14 +21,20 @@ public class App {
                 numbers[i] = Integer.parseInt(args[i]);
             }
         } catch (NumberFormatException e) {
-            System.out.println("Error: all arguments must be valid integers.");
+            printer.print("Error: invalid number");
             return;
         }
 
         ArrayStats stats = new ArrayStats();
 
-        System.out.println("Max: " + stats.max(numbers));
-        System.out.println("Min: " + stats.min(numbers));
-        System.out.println("Mean: " + stats.mean(numbers));
+        printer.print("Max: " + stats.max(numbers));
+        printer.print("Min: " + stats.min(numbers));
+        printer.print("Mean: " + stats.mean(numbers));
+    }
+
+    public static void main(String[] args) {
+        Printer printer = new ConsolePrinter();
+        App app = new App(printer);
+        app.run(args);
     }
 }
