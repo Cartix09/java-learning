@@ -20,17 +20,17 @@ class FakePrinter implements Printer {
 public class AppTest {
 
     @Test
-    void appPrintsStatsCorrectly() {
+    void appPrintsLibrarySummary() {
         FakePrinter printer = new FakePrinter();
         App app = new App(printer);
 
-        String[] args = {"10", "20", "30"};
-        app.run(args);
+        app.run();
 
         String output = printer.getOutput();
 
-        assertTrue(output.contains("Max: 30"));
-        assertTrue(output.contains("Min: 10"));
-        assertTrue(output.contains("Mean: 20.0"));
+        assertTrue(output.contains("Number of books: 3"));
+        assertTrue(output.contains("Total pages: 1050"));
+        assertTrue(output.contains("Contains Dune: true"));
+        assertTrue(output.contains("Contains Hamlet: false"));
     }
 }

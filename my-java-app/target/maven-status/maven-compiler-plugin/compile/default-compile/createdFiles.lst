@@ -4,10 +4,12 @@ com/example/Cart.class
 com/example/Product.class
 com/example/Printer.class
 com/example/Calculator.class
+com/example/Library.class
 com/example/ArrayStats.class
 com/example/ConsolePrinter.class
 com/example/Greeter.class
 com/example/Main.class
 com/example/Rectangle.class
 com/example/ShapeUtils.class
+com/example/Book.class
 com/example/Circle.class
