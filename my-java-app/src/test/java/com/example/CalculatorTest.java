@@ -3,6 +3,8 @@ package com.example;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class CalculatorTest {
 
@@ -28,5 +30,17 @@ public class CalculatorTest {
     void averageCalculatesCorrectly() {
         Calculator c = new Calculator();
         assertEquals(17.5, c.average(10, 25));
+    }
+
+    @Test
+    void isEvenReturnsTrueForEvenNumber() {
+        Calculator c = new Calculator();
+        assertTrue(c.isEven(10));
+    }
+
+    @Test
+    void isEvenReturnsFalseForOddNumber() {
+        Calculator c = new Calculator();
+        assertFalse(c.isEven(7));
     }
 }

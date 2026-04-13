@@ -17,4 +17,8 @@ public class Calculator {
     public double average(int a, int b) {
         return (a + b) / 2.0;
     }
+
+    public boolean isEven(int x) {
+        return x % 2 == 0;
+    }
 }
