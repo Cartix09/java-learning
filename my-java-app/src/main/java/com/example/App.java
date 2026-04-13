@@ -2,29 +2,26 @@ package com.example;
 
 public class App {
     public static void main(String[] args) {
-        if (args.length < 2) {
-            System.out.println("Usage: java com.example.App <number1> <number2>");
+        if (args.length == 0) {
+            System.out.println("Usage: java com.example.App <number1> <number2> ...");
             return;
         }
 
-        int a;
-        int b;
+        int[] numbers = new int[args.length];
 
         try {
-            a = Integer.parseInt(args[0]);
-            b = Integer.parseInt(args[1]);
+            for (int i = 0; i < args.length; i++) {
+                numbers[i] = Integer.parseInt(args[i]);
+            }
         } catch (NumberFormatException e) {
-            System.out.println("Error: both arguments must be valid integers.");
+            System.out.println("Error: all arguments must be valid integers.");
             return;
         }
 
-        Calculator calculator = new Calculator();
+        ArrayStats stats = new ArrayStats();
 
-        System.out.println("Sum: " + calculator.sum(a, b));
-        System.out.println("Difference: " + calculator.diff(a, b));
-        System.out.println("Product: " + calculator.product(a, b));
-        System.out.println("Average: " + calculator.average(a, b));
-        System.out.println(a + " is even: " + calculator.isEven(a));
-        System.out.println(b + " is even: " + calculator.isEven(b));
+        System.out.println("Max: " + stats.max(numbers));
+        System.out.println("Min: " + stats.min(numbers));
+        System.out.println("Mean: " + stats.mean(numbers));
     }
 }
