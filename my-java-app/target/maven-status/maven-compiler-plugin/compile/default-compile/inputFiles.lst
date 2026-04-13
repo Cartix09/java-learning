@@ -13,3 +13,9 @@
 /workspaces/java-learning/my-java-app/src/main/java/com/example/Rectangle.java
 /workspaces/java-learning/my-java-app/src/main/java/com/example/Shape.java
 /workspaces/java-learning/my-java-app/src/main/java/com/example/ShapeUtils.java
+/workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/Main.java
+/workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/domain/Company.java
+/workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/domain/Project.java
+/workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/domain/ProjectStatus.java
+/workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/engine/GameEngine.java
+/workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/ui/ConsoleUI.java

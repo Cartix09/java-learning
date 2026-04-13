@@ -1,7 +1,12 @@
+com/example/techcorp/ui/ConsoleUI.class
 com/example/Shape.class
 com/example/App.class
 com/example/Cart.class
 com/example/Product.class
+com/example/techcorp/engine/GameEngine.class
+com/example/techcorp/domain/Project.class
+com/example/techcorp/domain/Company.class
+com/example/techcorp/domain/ProjectStatus.class
 com/example/Printer.class
 com/example/Calculator.class
 com/example/Library.class
@@ -11,5 +16,6 @@ com/example/Greeter.class
 com/example/Main.class
 com/example/Rectangle.class
 com/example/ShapeUtils.class
+com/example/techcorp/Main.class
 com/example/Book.class
 com/example/Circle.class
