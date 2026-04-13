@@ -1,7 +1,11 @@
+com/example/Shape.class
 com/example/App.class
 com/example/Cart.class
 com/example/Product.class
 com/example/Calculator.class
 com/example/Greeter.class
 com/example/Main.class
+com/example/Rectangle.class
+com/example/ShapeUtils.class
+com/example/Circle.class
 com/example/ArrayStats.class
