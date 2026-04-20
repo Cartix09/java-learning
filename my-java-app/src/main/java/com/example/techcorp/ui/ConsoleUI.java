@@ -1,7 +1,9 @@
 package com.example.techcorp.ui;
 
+
 import com.example.techcorp.domain.Company;
 import com.example.techcorp.domain.Project;
+import com.example.techcorp.domain.Employee;
 import java.util.Scanner;
 
 public class ConsoleUI {
@@ -46,6 +48,15 @@ public void showCompanyStatus(Company company) {
             + " | progress: " + project.getProgress()
             + "/" + project.getRequiredWork()
         );
+
+        System.out.println("  Assigned employees:");
+        for (Employee employee : project.getEmployees()) {
+            System.out.println(
+                "  * " + employee.getName()
+                + " | role: " + employee.getRole()
+                + " | work per turn: " + employee.work()
+            );
+        }
     }
 }
 

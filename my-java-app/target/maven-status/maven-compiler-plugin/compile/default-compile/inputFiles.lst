@@ -15,7 +15,11 @@
 /workspaces/java-learning/my-java-app/src/main/java/com/example/ShapeUtils.java
 /workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/Main.java
 /workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/domain/Company.java
+/workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/domain/Developer.java
+/workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/domain/Employee.java
+/workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/domain/Manager.java
 /workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/domain/Project.java
 /workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/domain/ProjectStatus.java
+/workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/domain/Tester.java
 /workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/engine/GameEngine.java
 /workspaces/java-learning/my-java-app/src/main/java/com/example/techcorp/ui/ConsoleUI.java
