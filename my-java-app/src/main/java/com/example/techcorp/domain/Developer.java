@@ -8,7 +8,7 @@ public class Developer extends Employee {
 
     @Override
     public int work() {
-        return skill * 2;
+        return getSkill() * 2;
     }
 
     @Override

@@ -8,7 +8,7 @@ public class Tester extends Employee {
 
     @Override
     public int work() {
-        return skill;
+        return getSkill();
     }
 
     @Override

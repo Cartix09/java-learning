@@ -6,3 +6,6 @@
 /workspaces/java-learning/my-java-app/src/test/java/com/example/LibraryTest.java
 /workspaces/java-learning/my-java-app/src/test/java/com/example/ProductTest.java
 /workspaces/java-learning/my-java-app/src/test/java/com/example/ShapeTest.java
+/workspaces/java-learning/my-java-app/src/test/java/com/example/techcorp/domain/CompanyTest.java
+/workspaces/java-learning/my-java-app/src/test/java/com/example/techcorp/domain/EmployeeTest.java
+/workspaces/java-learning/my-java-app/src/test/java/com/example/techcorp/domain/ProjectTest.java

@@ -44,6 +44,7 @@ public class Company {
     }
 
     public void changeCash(double amount) {
-        cash += amount;
+        double newCash = cash + amount;
+        cash = newCash;
     }
 }

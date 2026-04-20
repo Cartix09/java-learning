@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.CartTest" time="0.015" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.techcorp.domain.EmployeeTest" time="0.018" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -53,7 +53,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="cartWorksWithSingleProduct" classname="com.example.CartTest" time="0.002"/>
-  <testcase name="emptyCartHasZeroTotal" classname="com.example.CartTest" time="0.001"/>
-  <testcase name="cartCalculatesTotalForMultipleProducts" classname="com.example.CartTest" time="0.007"/>
+  <testcase name="employeeRejectsBlankName" classname="com.example.techcorp.domain.EmployeeTest" time="0.002"/>
+  <testcase name="employeeStoresValidSkill" classname="com.example.techcorp.domain.EmployeeTest" time="0.001"/>
+  <testcase name="employeeStoresValidName" classname="com.example.techcorp.domain.EmployeeTest" time="0.001"/>
+  <testcase name="employeeRejectsNullName" classname="com.example.techcorp.domain.EmployeeTest" time="0.001"/>
+  <testcase name="employeeRejectsEmptyName" classname="com.example.techcorp.domain.EmployeeTest" time="0.0"/>
+  <testcase name="employeeRejectsZeroSkill" classname="com.example.techcorp.domain.EmployeeTest" time="0.001"/>
+  <testcase name="employeeRejectsNegativeSkill" classname="com.example.techcorp.domain.EmployeeTest" time="0.002"/>
 </testsuite>

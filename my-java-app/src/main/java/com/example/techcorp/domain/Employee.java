@@ -2,19 +2,25 @@ package com.example.techcorp.domain;
 
 public class Employee {
 
-    protected String name;
-    protected int skill;
+    private String name;
+    private int skill;
 
     public Employee(String name, int skill) {
-        if (name == null || name.isBlank()) {
-            throw new IllegalArgumentException("Employee name cannot be empty.");
-        }
+        setName(name);
+        setSkill(skill);
+    }
 
+    public void setName(String name) {
+        if (name == null || name.isBlank()) {
+            throw new IllegalArgumentException("Invalid employee name.");
+        }
+        this.name = name;
+    }
+
+    public void setSkill(int skill) {
         if (skill <= 0) {
             throw new IllegalArgumentException("Skill must be positive.");
         }
-
-        this.name = name;
         this.skill = skill;
     }
 

@@ -3,7 +3,10 @@ com/example/CartTest.class
 com/example/AppTest.class
 com/example/ArrayStatsTest.class
 com/example/ShapeTest.class
+com/example/techcorp/domain/ProjectTest.class
 com/example/FakePrinter.class
+com/example/techcorp/domain/EmployeeTest.class
 com/example/CalculatorTest.class
 com/example/LibraryTest.class
+com/example/techcorp/domain/CompanyTest.class
 com/example/ProductTest.class

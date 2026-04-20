@@ -13,11 +13,11 @@ public class Project {
 
     public Project(String name, int requiredWork) {
         if (name == null || name.isBlank()) {
-            throw new IllegalArgumentException("Project name cannot be empty.");
+            throw new IllegalArgumentException("Invalid project name.");
         }
 
         if (requiredWork <= 0) {
-            throw new IllegalArgumentException("Required work must be positive.");
+            throw new IllegalArgumentException("Work must be positive.");
         }
 
         this.name = name;
@@ -48,7 +48,7 @@ public class Project {
     }
 
     public boolean isFinished() {
-        return status == ProjectStatus.FINISHED;
+        return progress >= requiredWork;
     }
 
     public void addEmployee(Employee employee) {
@@ -65,20 +65,37 @@ public class Project {
         }
     }
 
-    public void workOneTurn() {
-        if (status == ProjectStatus.IN_PROGRESS) {
-            int workDone = 0;
-
-            for (Employee employee : employees) {
-                workDone += employee.work();
-            }
-
-            progress += workDone;
-
-            if (progress >= requiredWork) {
-                progress = requiredWork;
-                status = ProjectStatus.FINISHED;
-            }
+    public void addProgress(int amount) {
+        if (amount < 0) {
+            throw new IllegalArgumentException("Progress cannot be negative.");
         }
+
+        if (status == ProjectStatus.FINISHED) {
+            return;
+        }
+
+        progress += amount;
+
+        if (progress > requiredWork) {
+            progress = requiredWork;
+        }
+
+        if (progress >= requiredWork) {
+            status = ProjectStatus.FINISHED;
+        }
+    }
+
+    public void workOneTurn() {
+        if (status != ProjectStatus.IN_PROGRESS) {
+            return;
+        }
+
+        int workDone = 0;
+
+        for (Employee employee : employees) {
+            workDone += employee.work();
+        }
+
+        addProgress(workDone);
     }
 }
